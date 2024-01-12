@@ -38,7 +38,7 @@ public class Main {
         ListIterator<Song> listIterator = playList.listIterator();
 
         if (playList.size() == 0) {
-            System.out.println("This playlist have no song");
+            System.out.println("This playlist has no song !");
         } else {
             System.out.println("Now playing " + listIterator.next().toString());
             printMenu();
@@ -50,7 +50,7 @@ public class Main {
 
             switch (action) {
                 case 0:
-                    System.out.println("PlayList complete");
+                    System.out.println("PlayList has been closed !");
                     quit = true;
                     break;
 
@@ -64,7 +64,7 @@ public class Main {
                     if (listIterator.hasNext()) {
                         System.out.println("Now playing " + listIterator.next().toString());
                     } else {
-                        System.out.println("no song available, reached to the end of the list");
+                        System.out.println("no song available, reached to the end of the list !");
                         forward = false;
                     }
                     break;
@@ -79,7 +79,7 @@ public class Main {
                     if (listIterator.hasPrevious()) {
                         System.out.println("Now playing " + listIterator.previous().toString());
                     } else {
-                        System.out.println("you are at the first song!");
+                        System.out.println("you are at the first song !");
                         forward = false;
                     }
                     break;
